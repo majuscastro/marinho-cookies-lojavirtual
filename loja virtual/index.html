@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.2">
+    <title>Marinho Cookies | Loja Oficial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">MARINHO <span>COOKIES</span></a>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#atendimento">Atendimento</a>
+                <div class="cart-nav" id="cart-icon-container" onclick="window.location.href='checkout.html'">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="carousel">
+        <div class="slides">
+            <div class="slide active">
+                <img src="https://s2-g1.glbimg.com/yMwvPBwHXD8_0olDTSKpR6EnjyY=/0x0:1280x960/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/F/L/DV5lfcSk2ZNiuZ52BABQ/whatsapp-image-2025-11-20-at-10.36.37.jpeg" alt="Banner Principal">
+                <div class="slide-content">
+                    <h1>A Arte em Forma de Cookie</h1>
+                    <p>Experiência gourmet com ingredientes selecionados.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://framerusercontent.com/images/o8VsCvzVT6pl3ukOVCAv5ZXG5dM.jpg?width=1440&height=1440%22" alt="Banner Promocional">
+                <div class="slide-content">
+                    <h1>Sabor que Conecta</h1>
+                    <p>Feitos diariamente com chocolate premium.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="catalogo" class="main-container">
+        <main class="products-grid-container">
+            <h2 class="section-title">Nosso Catálogo</h2>
+            
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Pesquise seu sabor favorito...">
+            </div>
+
+            <div class="grid-cookies">
+                <a href="cookie1.html" class="cookie-card">
+                    <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/04f265b9-3095-4808-93c7-94b79feaa720/202406190850_GL5U_i.jpg" alt="Azul Royal">
+                    <div class="card-body">
+                        <h3>Azul Royal</h3>
+                        <p class="desc">Massa amanteigada com delicioso chocolate KITKAT.</p>
+                        <p class="price">R$ 8,00</p>
+                        <span class="btn-ver-mais">Ver Detalhes</span>
+                    </div>
+                </a>
+                
+                <a href="cookie2.html" class="cookie-card">
+                    <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/04f265b9-3095-4808-93c7-94b79feaa720/202312030906_S312_i.jpg" alt="Branco Neve">
+                    <div class="card-body">
+                        <h3>Branco Neve</h3>
+                        <p class="desc">Cookie feito com pistache original e gotas de chocolate branco.</p>
+                        <p class="price">R$ 10,00</p>
+                        <span class="btn-ver-mais">Ver Detalhes</span>
+                    </div>
+                </a>
+
+                <a href="cookie3.html" class="cookie-card">
+                    <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/04f265b9-3095-4808-93c7-94b79feaa720/202509301219_YGXM_i.jpg" alt="Safira">
+                    <div class="card-body">
+                        <h3>Safira</h3>
+                        <p class="desc">Mix de nuts e avelã com chocolate meio amargo.</p>
+                        <p class="price">R$ 12,00</p>
+                        <span class="btn-ver-mais">Ver Detalhes</span>
+                    </div>
+                </a>
+
+                <a href="cookie4.html" class="cookie-card">
+                    <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/04f265b9-3095-4808-93c7-94b79feaa720/202306301414_U2VF_i.jpg" alt="Marinho Intenso">
+                    <div class="card-body">
+                        <h3>Marinho Intenso</h3>
+                        <p class="desc">Cacau Black com gotas de chocolate 70%.</p>
+                        <p class="price">R$ 15,00</p>
+                        <span class="btn-ver-mais">Ver Detalhes</span>
+                    </div>
+                </a>
+
+                <a href="cookie5.html" class="cookie-card">
+                    <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/04f265b9-3095-4808-93c7-94b79feaa720/202306301408_0RP3_i.jpg" alt="Pérola">
+                    <div class="card-body">
+                        <h3>Pérola</h3>
+                        <p class="desc">Combinação de chocolate branco e preto com o delicioso Kinder Bueno.</p>
+                        <p class="price">R$ 16,00</p>
+                        <span class="btn-ver-mais">Ver Detalhes</span>
+                    </div>
+                </a>
+
+                <a href="cookie6.html" class="cookie-card">
+                    <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/04f265b9-3095-4808-93c7-94b79feaa720/202306301413_N36P_i.jpg" alt="Turquesa Dark">
+                    <div class="card-body">
+                        <h3>Turquesa Dark</h3>
+                        <p class="desc">Chocolate amargo com leve toque de menta.</p>
+                        <p class="price">R$ 17,00</p>
+                        <span class="btn-ver-mais">Ver Detalhes</span>
+                    </div>
+                </a>
+
+                <a href="cookie7.html" class="cookie-card">
+                    <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/04f265b9-3095-4808-93c7-94b79feaa720/202402160156_7HB0_i.jpg" alt="Ártico">
+                    <div class="card-body">
+                        <h3>Ártico</h3>
+                        <p class="desc">Cookie tradicional com recheio de Nutella.</p>
+                        <p class="price">R$ 18,00</p>
+                        <span class="btn-ver-mais">Ver Detalhes</span>
+                    </div>
+                </a>
+
+                <a href="cookie8.html" class="cookie-card">
+                    <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/04f265b9-3095-4808-93c7-94b79feaa720/202402160157_I362_i.jpg" alt="Noite Estrelada">
+                    <div class="card-body">
+                        <h3>Noite Estrelada</h3>
+                        <p class="desc">A melhor combinação  do duo chocolante branco e preto.</p>
+                        <p class="price">R$ 19,00</p>
+                        <span class="btn-ver-mais">Ver Detalhes</span>
+                    </div>
+                </a>
+            </div>
+        </main>
+
+       <aside class="sidebar-cart">
+    <h3>Seu Carrinho</h3>
+    <div id="cart-items-list">
+        <p class="empty-cart">Carrinho vazio</p>
+    </div>
+    
+    <div class="shipping-area">
+        <label>Calcular Frete (CEP):</label>
+        <div class="input-row">
+            <input type="text" id="cep-input" placeholder="00000-000">
+            <button onclick="calcularFrete()">OK</button>
+        </div>
+    </div>
+
+    <div class="cart-summary">
+        <div class="line"><span>Frete:</span> <span id="frete-val">R$ 0,00</span></div>
+        <div class="line total"><span>Total:</span> <span id="total-price">R$ 0,00</span></div>
+        <a href="checkout.html" class="checkout-btn">Fechar Pedido</a>
+    </div>
+</aside>
+    </div>
+
+    <section id="atendimento" class="customer-service">
+        <h2  class="section-title">Atendimento</h2>
+        <div class="service-container">
+            <div class="chat-box">
+                <h4><i class="fas fa-comments"></i> Chat em Tempo Real</h4>
+                <div class="chat-messages" id="chat-messages">
+                    <p class="bot-msg">Olá! Sou o assistente da Marinho Cookies. Como posso ajudar?</p>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" id="chat-input" placeholder="Digite aqui...">
+                    <button onclick="enviarMensagemChat()"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="contact-info">
+                 <h4>Siga a Marinho Cookies</h4>
+                 <div class="social-links">
+                    <a href="https://www.instagram.com/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                 </div>
+                 <ul class="policy-list">
+                    <li><a href="devolucoes.html">Política de Devolução</a></li>
+                 </ul>
+                  <div class="policy-section">
+            <h4>Opções de contato:</h4>
+            <ul>
+                <br>
+                <li>(32) 99999-8888</li>
+                <li>sac@marinhocookies.com</li>
+
+            </ul>
+        </div>
+    </div>
+            </div>
+        </div>
+        <!-- SEÇÃO SOBRE -->
+        <section class="about-section">
+            <h2 class="section-title">Sobre a Marinho Cookies</h2>
+                <p>
+                    A Marinho Cookies nasceu com o propósito de transformar ingredientes
+                    selecionados em experiências únicas. Cada cookie é produzido
+                    artesanalmente, respeitando processos cuidadosos e sabores marcantes.
+                </p>
+                <p>
+                     Nosso compromisso é entregar qualidade, sofisticação e aquele sabor
+                        que cria memórias.
+    <           /p>
+        </section>
+        </section>
+
+        <!-- PATROCINADORES -->
+         <section class="sponsors-section">
+            <div class="sponsors-container">
+            <h2 class="section-penis">Nossos Patrocinadores</h2>
+
+            <div class="sponsors-logos">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Logo_of_the_KitKat.svg/1200px-Logo_of_the_KitKat.svg.png" alt="KitKat">
+                <img src="https://logos-world.net/wp-content/uploads/2023/03/Nutella-Logo.png" alt="Nutella">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Kinderbueno_brand_logo.png" alt="Kinder Bueno">
+             </div>
+            </div>
+        </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
