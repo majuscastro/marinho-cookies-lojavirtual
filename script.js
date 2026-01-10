@@ -208,8 +208,9 @@ function enviarMensagemChat() {
         
         setTimeout(() => {
             let resposta = "Em breve um atendente humano irá te responder.";
-            if (msgUser.includes("devolu")) resposta = "Consulte nossa página de Devoluções clicando em "Política de Devolução" ao lado do chat para detalhes sobre danos ou trocas.";
+            if (msgUser.includes("devolu")) resposta = "Consulte nossa página de Devoluções clicando em Política de Devolução ao lado.";
             if (msgUser.includes("frete")) resposta = "Nosso frete varia por região. Digite seu CEP no carrinho para calcular.";
+             if (msgUser.includes("troca")) resposta = "Consulte nossa página de Devoluções clicando em Política de Devolução ao lado.";
             
             messages.innerHTML += `<p class="bot-msg">${resposta}</p>`;
             messages.scrollTop = messages.scrollHeight;
@@ -232,4 +233,5 @@ function removerDoCarrinho(nome) {
         // Salva no LocalStorage e atualiza a tela
         salvarCarrinho();
     }
+
 }
