@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azul Royal | Marinho Cookies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">MARINHO <span>COOKIES</span></a>
+            <nav>
+                <a href="index.html">Voltar ao Catálogo</a>
+                <div class="cart-nav" onclick="window.location.href='checkout.html'">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="product-detail-container">
+        <div class="product-hero">
+            <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/04f265b9-3095-4808-93c7-94b79feaa720/202406190850_GL5U_i.jpg" alt="Azul Royal">
+            <div class="product-info">
+                <h1>Ártico</h1>
+                <p style="margin-bottom: 20px; color: #555;">Uma experiência única. Nossa massa amanteigada exclusiva, tingida levemente de azul real, combinada com generosos pedaços de chocolate branco belga. Crocante por fora, macio por dentro.</p>
+                <p class="price">R$ 18,00</p>
+                <button class="add-btn-large" onclick="adicionarAoCarrinho('Azul Royal', 8)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <div class="reviews-section">
+            <h3>Avaliações de Clientes</h3>
+            <br>
+            <div class="review-card">
+                <strong>Ana Souza</strong>
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>Lindo para fotos.</p>
+            </div>
+            <div class="review-card">
+                <strong>Carlos Oliveira</strong>
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                <p>Baunilha suave</p>
+            </div>
+            <div class="review-card">
+                <strong>Mariana Lima</strong>
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>Minhas filhas amaram</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

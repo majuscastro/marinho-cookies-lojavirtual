@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido | Marinho Cookies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">MARINHO <span>COOKIES</span></a>
+        </div>
+    </header>
+
+    <div class="checkout-container">
+        <form class="checkout-form" onsubmit="processarPedido(event)">
+            
+            <h2>1. Dados Pessoais</h2>
+            <div class="form-group">
+                <label>Nome Completo</label>
+                <input type="text" id="nome" required placeholder="Ex: João da Silva">
+            </div>
+            <div class="form-row">
+                <div class="form-group" style="flex:1">
+                    <label>CPF</label>
+                    <input type="text" required placeholder="000.000.000-00">
+                </div>
+                <div class="form-group" style="flex:1">
+                    <label>E-mail</label>
+                    <input type="email" required placeholder="email@exemplo.com">
+                </div>
+            </div>
+
+            <h2>2. Endereço de Entrega</h2>
+            <div class="form-row">
+                <div class="form-group" style="flex:1">
+                    <label>CEP</label>
+                    <input type="text" required placeholder="00000-000">
+                </div>
+                <div class="form-group" style="flex:2">
+                    <label>Cidade/Estado</label>
+                    <input type="text" required placeholder="Ex: Juiz de Fora - MG">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group" style="flex:3">
+                    <label>Rua</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group" style="flex:1">
+                    <label>Número</label>
+                    <input type="text" required>
+                </div>
+            </div>
+
+            <h2>3. Pagamento</h2>
+            <div class="form-group">
+                <label>Forma de Pagamento</label>
+                <select id="payment-method">
+                    <option value="credito">Cartão de Crédito</option>
+                    <option value="pix">PIX (5% de desconto)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Parcelamento</label>
+                <select id="installments">
+                    </select>
+            </div>
+            <div class="form-group">
+                <label>Número do Cartão</label>
+                <input type="text" placeholder="0000 0000 0000 0000">
+            </div>
+
+            <div class="order-summary-box">
+                <h3>Resumo do Pedido</h3>
+                <ul id="checkout-list" style="list-style: none; margin: 15px 0; color: #555;"></ul>
+                <div class="total" style="border:none;">Total a Pagar: R$ <span id="checkout-total">0,00</span></div>
+                <button type="submit" class="checkout-btn">CONFIRMAR COMPRA</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
