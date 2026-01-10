@@ -207,8 +207,8 @@ function enviarMensagemChat() {
         input.value = "";
         
         setTimeout(() => {
-            let resposta = "Em breve um atendente humano irá te responder.";
-            if (msgUser.includes("devolu")) resposta = "Consulte nossa página de Devoluções clicando em "Política de Devolução" ao lado do chat para detalhes sobre danos ou trocas.";
+            let resposta = "Em breve um atendente humano irá te responder. :)";
+            if (msgUser.includes("devolu")) resposta = "Consulte nossa página de Devoluções clicando em "'Política de Devolução'" ao lado do chat para detalhes sobre danos ou trocas.";
             if (msgUser.includes("frete")) resposta = "Nosso frete varia por região. Digite seu CEP no carrinho para calcular.";
             
             messages.innerHTML += `<p class="bot-msg">${resposta}</p>`;
@@ -234,3 +234,4 @@ function removerDoCarrinho(nome) {
     }
 
 }
+
